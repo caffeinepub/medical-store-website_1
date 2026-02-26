@@ -1,0 +1,17 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH medical theme — mint-green primary, cool gray accents, white background — plus Inter and Plus Jakarta Sans font imports.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with medical theme colors, custom card/mint shadows, display font family, and additional border-radius/animation tokens.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations: store info, categories, products by category, product search, and all products aggregated across categories.",
+  "frontend/src/components/Header.tsx": "Sticky responsive header with \"Sameer Medical\" logo/branding, typed navigation links, mobile hamburger menu, and CTA button.",
+  "frontend/src/components/HeroSection.tsx": "Full-width hero section with banner image, gradient overlay, store name/tagline defaulting to \"Sameer Medical\", and a quick-info bar showing phone \"0000999988\" and hours \"Mon-Sun: 10:00 AM – 3:00 PM & 6:00 PM – 10:00 PM\".",
+  "frontend/src/components/AboutUsSection.tsx": "Two-column About Us section with store description referencing \"Sameer Medical\" and contact info cards showing address \"Shahabad, Karnataka, India\", phone \"0000999988\", and hours \"Mon-Sun: 10:00 AM – 3:00 PM & 6:00 PM – 10:00 PM\".",
+  "frontend/src/components/CategoriesGrid.tsx": "Responsive 4-column categories grid with icon-colored cards, loading skeletons, empty state, and links to the products page filtered by category.",
+  "frontend/src/components/ProductCard.tsx": "Reusable product card showing category badge, availability status, name, description, and formatted INR price with a top mint-green accent stripe.",
+  "frontend/src/components/FeaturedProducts.tsx": "Featured products section with responsive product card grid, loading skeletons, and empty state — the \"View All Products\" link now passes `search={{ category: undefined }}` to satisfy the typed router.",
+  "frontend/src/components/CategoryFilter.tsx": "Horizontal scrollable category filter buttons with active/inactive states and an \"All\" option.",
+  "frontend/src/components/SearchBar.tsx": "Search input with icon, clear button, and debounce-ready onChange handler styled with mint-green focus ring.",
+  "frontend/src/components/Footer.tsx": "Dark footer with \"Sameer Medical\" branding, quick navigation links, contact details (Shahabad Karnataka India, 0000999988, updated hours), copyright year, and caffeine.ai attribution.",
+  "frontend/src/pages/LandingPage.tsx": "Landing page composing Hero, About Us, Categories Grid, and Featured Products sections using backend data hooks.",
+  "frontend/src/pages/ProductsPage.tsx": "Full products listing page with debounced search, category filtering, results count, responsive product grid, and empty states.",
+  "frontend/src/App.tsx": "Main app with TanStack Router setup — root layout with Header/Footer, routes for landing page (/) and products page (/products) with category search param support."
+}

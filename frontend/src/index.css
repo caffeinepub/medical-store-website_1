@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Medical theme: mint-green primary, cool gray accents, white background */
+    --background: 0.99 0 0;
+    --foreground: 0.2 0.01 250;
+
+    --card: 1 0 0;
+    --card-foreground: 0.2 0.01 250;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.2 0.01 250;
+
+    /* Mint green primary */
+    --primary: 0.68 0.14 162;
+    --primary-foreground: 1 0 0;
+
+    /* Light mint secondary */
+    --secondary: 0.95 0.04 162;
+    --secondary-foreground: 0.3 0.08 162;
+
+    /* Cool gray muted */
+    --muted: 0.96 0.005 250;
+    --muted-foreground: 0.52 0.02 250;
+
+    /* Teal accent */
+    --accent: 0.92 0.06 162;
+    --accent-foreground: 0.28 0.1 162;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.9 0.01 250;
+    --input: 0.9 0.01 250;
+    --ring: 0.68 0.14 162;
+
+    --chart-1: 0.68 0.14 162;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.97 0.01 250;
+    --sidebar-foreground: 0.2 0.01 250;
+    --sidebar-primary: 0.68 0.14 162;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.92 0.06 162;
+    --sidebar-accent-foreground: 0.28 0.1 162;
+    --sidebar-border: 0.9 0.01 250;
+    --sidebar-ring: 0.68 0.14 162;
+  }
+
+  .dark {
+    --background: 0.13 0.01 250;
+    --foreground: 0.96 0.005 250;
+
+    --card: 0.18 0.01 250;
+    --card-foreground: 0.96 0.005 250;
+
+    --popover: 0.18 0.01 250;
+    --popover-foreground: 0.96 0.005 250;
+
+    --primary: 0.72 0.14 162;
+    --primary-foreground: 0.1 0.02 162;
+
+    --secondary: 0.22 0.02 250;
+    --secondary-foreground: 0.96 0.005 250;
+
+    --muted: 0.22 0.02 250;
+    --muted-foreground: 0.65 0.02 250;
+
+    --accent: 0.25 0.05 162;
+    --accent-foreground: 0.72 0.14 162;
+
+    --destructive: 0.704 0.191 22.216;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 1 0 0 / 10%;
+    --input: 1 0 0 / 15%;
+    --ring: 0.72 0.14 162;
+
+    --sidebar: 0.18 0.01 250;
+    --sidebar-foreground: 0.96 0.005 250;
+    --sidebar-primary: 0.72 0.14 162;
+    --sidebar-primary-foreground: 0.1 0.02 162;
+    --sidebar-accent: 0.25 0.05 162;
+    --sidebar-accent-foreground: 0.72 0.14 162;
+    --sidebar-border: 1 0 0 / 10%;
+    --sidebar-ring: 0.72 0.14 162;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

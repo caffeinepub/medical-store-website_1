@@ -1,0 +1,67 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update store info: name, phone, hours, and city",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "summary": "Update the pharmacy name to 'Sameer Medical' everywhere it appears across the frontend",
+      "acceptanceCriteria": [
+        "The store name 'Sameer Medical' is displayed in the Header/logo area",
+        "The store name 'Sameer Medical' is displayed in the HeroSection",
+        "The store name 'Sameer Medical' is displayed in the AboutUsSection",
+        "The store name 'Sameer Medical' is displayed in the Footer",
+        "No previous placeholder store name appears anywhere on the site"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Update the logo text and branding to display 'Sameer Medical' instead of the current placeholder name"
+        },
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Update the hero banner headline and any store name references to display 'Sameer Medical'"
+        },
+        {
+          "path": "frontend/src/components/AboutUsSection.tsx",
+          "operation": "modify",
+          "description": "Update the about section store name and description to reference 'Sameer Medical' and update the fallback default store name to 'Sameer Medical'"
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the footer branding and store name to display 'Sameer Medical' and update the fallback default store name to 'Sameer Medical'"
+        }
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "summary": "Update all frontend components to display the phone number '0000999988', hours 'Mon-Sun: 10:00 AM – 3:00 PM & 6:00 PM – 10:00 PM', and location 'Shahabad, Karnataka, India'",
+      "acceptanceCriteria": [
+        "Phone number '0000999988' is displayed in the HeroSection quick-info bar, AboutUsSection contact card, and Footer",
+        "Hours 'Mon-Sun: 10:00 AM – 3:00 PM & 6:00 PM – 10:00 PM' are displayed in the HeroSection, AboutUsSection, and Footer",
+        "Location 'Shahabad, Karnataka, India' is displayed in the AboutUsSection and Footer",
+        "Fallback defaults in components also reflect the updated store details"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Update the quick-info bar to display phone '0000999988' and hours 'Mon-Sun: 10:00 AM – 3:00 PM & 6:00 PM – 10:00 PM' from storeInfo prop or updated fallback defaults"
+        },
+        {
+          "path": "frontend/src/components/AboutUsSection.tsx",
+          "operation": "modify",
+          "description": "Update the contact info cards to display phone '0000999988', hours 'Mon-Sun: 10:00 AM – 3:00 PM & 6:00 PM – 10:00 PM', and location 'Shahabad, Karnataka, India' from storeInfo prop or updated fallback defaults"
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the contact section to display phone '0000999988', hours 'Mon-Sun: 10:00 AM – 3:00 PM & 6:00 PM – 10:00 PM', and address 'Shahabad, Karnataka, India' from storeInfo prop or updated fallback defaults"
+        }
+      ]
+    }
+  ]
+}

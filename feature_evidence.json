@@ -1,0 +1,46 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-pharmacy-name-to-sameer-medical-everywhere-it-appears-across-the-frontend-header-herosection-aboutussection-footer-and-any-other-components-or-pages",
+      "featureTitle": "Update the pharmacy name to 'Sameer Medical' everywhere it appears across the frontend (Header, HeroSection, AboutUsSection, Footer, and any other components or pages).",
+      "files": [
+        "frontend/src/components/AboutUsSection.tsx",
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Header.tsx",
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-all-frontend-components-that-display-store-contact-info-and-hours-herosection-aboutussection-footer-to-show-the-phone-number-0000999988-hours-mon-sun-10-00-am-3-00-pm-6-00-pm-10-00-pm-and-location-shahabad-karnataka-india-using-data-from-the-backend-store-info-query-or-updated-fallback-defaults",
+      "featureTitle": "Update all frontend components that display store contact info and hours (HeroSection, AboutUsSection, Footer) to show the phone number '0000999988', hours 'Mon-Sun: 10:00 AM – 3:00 PM & 6:00 PM – 10:00 PM', and location 'Shahabad, Karnataka, India', using data from the backend store info query or updated fallback defaults.",
+      "files": [
+        "frontend/src/components/AboutUsSection.tsx",
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/HeroSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

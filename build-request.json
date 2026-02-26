@@ -1,0 +1,84 @@
+{
+  "kind": "build_request",
+  "title": "Update store info: name, phone, hours, and city",
+  "projectName": "Sameer Medical",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-6",
+      "text": "Update the pharmacy name to 'Sameer Medical' everywhere it appears across the frontend (Header, HeroSection, AboutUsSection, Footer, and any other components or pages).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7"
+        ],
+        "quotes": [
+          "Pharmacy name should be sameer medical"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The store name 'Sameer Medical' is displayed in the Header/logo area",
+        "The store name 'Sameer Medical' is displayed in the HeroSection",
+        "The store name 'Sameer Medical' is displayed in the AboutUsSection",
+        "The store name 'Sameer Medical' is displayed in the Footer",
+        "No previous placeholder store name appears anywhere on the site"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Update the backend store info to set the pharmacy name to 'Sameer Medical', phone number to '0000999988', operating hours to 'Mon-Sun: 10:00 AM – 3:00 PM & 6:00 PM – 10:00 PM', and address/city to 'Shahabad, Karnataka, India'.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-7"
+        ],
+        "quotes": [
+          "Pharmacy name should be sameer medical",
+          "call number like 0000999988",
+          "timings will be mon-sun morning-10am to 3pm and evening 6pm-10pm",
+          "city should be shahabad Karnataka india"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The backend getStoreInfo query returns name 'Sameer Medical'",
+        "The backend getStoreInfo query returns phone '0000999988'",
+        "The backend getStoreInfo query returns hours 'Mon-Sun: 10:00 AM – 3:00 PM & 6:00 PM – 10:00 PM'",
+        "The backend getStoreInfo query returns city/address as 'Shahabad, Karnataka, India'"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Update all frontend components that display store contact info and hours (HeroSection, AboutUsSection, Footer) to show the phone number '0000999988', hours 'Mon-Sun: 10:00 AM – 3:00 PM & 6:00 PM – 10:00 PM', and location 'Shahabad, Karnataka, India', using data from the backend store info query or updated fallback defaults.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-7"
+        ],
+        "quotes": [
+          "call number like 0000999988",
+          "timings will be mon-sun morning-10am to 3pm and evening 6pm-10pm",
+          "city should be shahabad Karnataka india"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Phone number '0000999988' is displayed in the HeroSection quick-info bar, AboutUsSection contact card, and Footer",
+        "Hours 'Mon-Sun: 10:00 AM – 3:00 PM & 6:00 PM – 10:00 PM' are displayed in the HeroSection, AboutUsSection, and Footer",
+        "Location 'Shahabad, Karnataka, India' is displayed in the AboutUsSection and Footer",
+        "Fallback defaults in components also reflect the updated store details"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not change any product listings, categories, or other backend data beyond the store info record",
+    "Do not modify files in frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or frontend/src/components/ui"
+  ],
+  "nonGoals": [
+    "Redesigning any visual theme or layout",
+    "Adding new pages or sections",
+    "Changing product data or categories"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
